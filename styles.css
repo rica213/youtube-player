@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+}
+
+#top-left{
+    display: flex;
+}
+
+main {
+    display: flex;
+}
+
+#comment-container{
+    display: flex;
+    flex-direction: column;
+}
+
+#metadata{
+    display: flex;
+    justify-content: space-between;
+}
+
+#left-side-metadata{
+    display: flex;
+    justify-content: space-between;
+}
+
+#owner-info-container{
+    display: flex;
+}
+
+#video-description h5{
+    display: inline;
+}

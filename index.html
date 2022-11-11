@@ -11,11 +11,13 @@
 
 <body>
     <header>
-        <nav>
-
-        </nav>
-        <div id="logo">
-            <img src="" alt="logo">
+        <div id="top-left">
+            <nav>
+                <div id="btn-nav">nav</div>
+            </nav>
+            <div id="logo">
+                <img src="" alt="logo">
+            </div>
         </div>
         <form action="#">
             <input type="search" name="search-video" id="search-video">
@@ -31,23 +33,34 @@
 
     <main>
         <section id="player-container">
-            <div id="player"></div>
+            <div id="player">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/V74l_zS1x8E"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
             <section id="comment-container">
                 <h1 id="video-title"> Here's the title goes!!!</h1>
-                <div id="right-side-metadata">
-                    <div id="owner-container">
-                        <img src="" alt="owner-headshot" id="owner-headshot">
-                        <h2 id="owner-name">owner-name</h2>
-                        <p id="suscribers">suscribers</p>
+                <div id="metadata">
+                    <div id="left-side-metadata">
+                        <div id="owner-info-container">
+                            <div id="owner-info-left">
+                                <img src="" alt="owner-headshot" id="owner-headshot">
+                            </div>
+                            <div id="owner-info-right">
+                                <h2 id="owner-name">owner-name</h2>
+                                <p id="suscribers">suscribers</p>
+                            </div>
+                        </div>
+                        <button id="btn-suscribe">suscribe</button>
                     </div>
-                    <button id="btn-suscribe">suscribe</button>
-                </div>
-                <div id="left-side-metadata">
-                    <button id="btn-like"> Like </button>
-                    <button id="btn-dislike"> Dislike</button>
-                    <button id="share"> Share</button>
-                    <button id="Download"> Download</button>
-                    <button id="more"> More</button>
+                    <div id="right-side-metadata">
+                        <button id="btn-like"> Like </button>
+                        <button id="btn-dislike"> Dislike</button>
+                        <button id="share"> Share</button>
+                        <button id="Download"> Download</button>
+                        <button id="more"> More</button>
+                    </div>
                 </div>
                 <div id="video-description">
                     <h5 id="viewers">number of viewers</h4>
@@ -57,7 +70,7 @@
                             sed saepe repellendus expedita rem aliquam dolore?</p>
                 </div>
                 <div id="comment-list">
-                    
+
                 </div>
             </section>
         </section>
