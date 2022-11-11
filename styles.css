@@ -2,38 +2,147 @@
     box-sizing: border-box;
 }
 
-header{
-    display: flex;
-    justify-content: space-between;
+body{
+    margin: 0;
 }
 
-#top-left{
+header {
     display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    margin-top: 0;
+    padding-top: 0;
+    width:100%;
+    flex-wrap: wrap;
+    height: 100%;
+}
+
+#top-left {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 13%;
+}
+
+#btn-nav {
+    padding: 15px;
+    width: 23%;
+}
+
+#btn-nav img {
+    width: 25px;
+}
+
+#logo{
+    width: 70%;
+}
+
+#logo img {
+    object-fit: cover;
+    width: 100%;
+}
+
+form {
+    display:inline-flex;
+    width:55%;
+    align-items: center;
+    margin: 20px;
+}
+
+#search-video{
+    width:79%;
+    padding: 14px;
+    border-radius: 40px 0px 0px 40px;
+    border:1px solid rgba(0,0,0,.2);
+    font-size: 16px;
+    height: 100%;
+}
+
+#btn-search{
+    margin-left: 0;
+    background-color: #f8f8f8;
+    border:1px solid rgba(0,0,0,.2);
+    border-radius: 0px 40px 40px 0px;
+    padding: 0 14px;
+    width:9%;
+    height: 100%;
+}
+
+#btn-search img{
+    width: 75%;
+    height: 100%;
+}
+
+#voice-search{
+    width:4%;
+    margin-left: 20px;
+}
+
+#voice-search img{
+    width:100%;
+    object-fit: cover;
+}
+
+#user-container{
+    display: inline-flex;
+    justify-content: space-between;
+    align-content: center;
+    width: 17%;
+}
+
+#video-creator{
+    width: 15%;
+    margin-top: 31px;
+}
+
+#video-creator img{
+    width: 100%;
+    object-fit: cover;
+}
+
+#notification{
+    width:15%;
+    margin-top: 31px;
+}
+
+#notification img{
+    width: 100%;
+    object-fit: cover;
+}
+
+#user-avatar{
+    width: 25%;
+    margin: 20px;
+}
+
+#user-avatar img{
+    width: 100%;
+    object-fit: cover;
 }
 
 main {
     display: flex;
 }
 
-#comment-container{
+#comment-container {
     display: flex;
     flex-direction: column;
 }
 
-#metadata{
+#metadata {
     display: flex;
     justify-content: space-between;
 }
 
-#left-side-metadata{
+#left-side-metadata {
     display: flex;
     justify-content: space-between;
 }
 
-#owner-info-container{
+#owner-info-container {
     display: flex;
 }
 
-#video-description h5{
+#video-description h5 {
     display: inline;
 }
