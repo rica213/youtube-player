@@ -143,6 +143,14 @@ main {
 #comment-container {
     display: flex;
     flex-direction: column;
+    width: 85%;
+}
+
+#video-title{
+    font-size: 30px;
+    margin-top: 0;
+    margin-left: 10px;
+    line-height: 25px;
 }
 
 #metadata {
@@ -153,10 +161,23 @@ main {
 #left-side-metadata {
     display: flex;
     justify-content: space-between;
+    width: 50%;
 }
 
 #owner-info-container {
     display: flex;
+}
+
+#owner-info-left{
+    width: 20%;
+}
+
+#owner-avatar{
+    width: 100%;
+}
+
+#right-side-metadata{
+    width: 50%;
 }
 
 #video-description h5 {
