@@ -10,121 +10,148 @@
 </head>
 
 <body>
-    <header>
-        <div id="top-left">
+    <div id="page-layout">
+        <header id="header">
             <nav>
-                <div id="btn-nav"><img src="img/icons-menu.svg" alt="menu"></div>
+                <input type="checkbox" name="toggle" id="toggle">
+                <ul class="navigation-menu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
             </nav>
-            <div id="logo">
-                <img src="img/YouTube-Logo.svg" alt="logo">
-            </div>
-        </div>
-        <form action="#">
-            <input type="search" name="search-video" id="search-video" placeholder="Search">
-            <div id="btn-search"><img src="img/icons-search.svg" alt="icon-search"></div>
-            <div id="voice-search"><img src="img/microphone.png" alt="microphone"></div>
-        </form>
-        <section id="user-container">
-            <div id="video-creator"><img src="img/video.png" alt="create-video-icon"></div>
-            <div id="notification"><img src="img/notification.png" alt=""></div>
-            <div id="user-avatar">
-                <img src="img/user.png" alt="user-avatar">
-            </div>     
-        </section>
-    </header>
-    <main>
-        <section id="player-container">
-            <div id="player">
-                <iframe src="https://www.youtube.com/embed/V74l_zS1x8E"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
-            </div>
-            <section id="comment-container">
-                <h1 id="video-title">Contributing to Open Source Part I: The Easy Way</h1>
-                <div id="metadata">
-                    <div id="left-side-metadata">
-                        <div id="owner-info-container">
-                            <div id="owner-info-left">
-                                <img src="img/user.png" alt="owner-avatar" id="owner-avatar">
-                            </div>
-                            <div id="owner-info-right">
-                                <h2 id="owner-name">owner-name</h2>
-                                <p id="suscribers">10K Suscribers</p>
-                            </div>
-                        </div>
-                        <button id="btn-suscribe">Suscribe</button>
-                    </div>
-                    <div id="right-side-metadata">
-                        <div id="together">
-                            <div id="btn-like"><img src="img/like.png" alt="like-icon"></div>
-                            <div id="btn-dislike"><img src="img/dislike.png" alt="dislike-icon"></div>
-                        </div>
-                        <div id="separate">
-                            <div id="btn-share"><img src="img/share.png" alt="share-icon"><span>Share</span></div>
-                            <div id="btn-download"><img src="img/download.png" alt="download-icon"><span>Download</span></div>
-                            <div id="btn-more"><img src="img/more.png" alt="more-icon"></div>
-                        </div>
-                    </div>
+            <div id="top-left">
+                    <div id="btn-nav"><label for="toggle"><img src="img/icons-menu.svg" alt="menu"></label></div>
+                <div id="logo">
+                    <img src="img/YouTube-Logo.svg" alt="logo">
                 </div>
-                <div id="video-description">
-                    <h5 id="viewers">number of viewers</h4>
-                        <h5 id="issue-date">issue-date</h5>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus facilis optio eius
-                            incidunt magnam, hic impedit delectus! Nemo, laboriosam provident deserunt ullam perferendis
-                            sed saepe repellendus expedita rem aliquam dolore?</p>
-                </div>
-                <div id="comment-list">
-
+            </div>
+            <form action="#">
+                <input type="search" name="search-video" id="search-video" placeholder="Search">
+                <div id="btn-search"><img src="img/icons-search.svg" alt="icon-search"></div>
+                <div id="voice-search"><img src="img/microphone.png" alt="microphone"></div>
+            </form>
+            <section id="user-container">
+                <div id="video-creator"><img src="img/video.png" alt="create-video-icon"></div>
+                <div id="notification"><img src="img/notification.png" alt=""></div>
+                <div id="user-avatar">
+                    <img src="img/user.png" alt="user-avatar">
                 </div>
             </section>
-        </section>
-        <section id="suggestion">
-            <div id="status">
-                <button id="all">All</button>
-                <button id="watched">Watched</button>
+        </header>
+        <main id="main">
+            <section id="player-container">
+                    <iframe src="https://www.youtube.com/embed/V74l_zS1x8E" title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                    <h1 id="video-title">Contributing to Open Source Part I: The Easy Way</h1>
+            </section>
+            <div id="metadata">
+                <div id="left-side-metadata">
+                    <div id="owner-info-container">
+                        <div id="owner-info-left">
+                            <img src="img/user.png" alt="owner-avatar" id="owner-avatar">
+                        </div>
+                        <div id="owner-info-right">
+                            <h2 id="owner-name">owner-name</h2>
+                            <p id="suscribers">10K Suscribers</p>
+                        </div>
+                    </div>
+                    <button id="btn-suscribe">Suscribe</button>
+                </div>
+                <div id="right-side-metadata">
+                    <div id="together">
+                        <div id="btn-like"><img src="img/like.png" alt="like-icon"></div>
+                        <div id="btn-dislike"><img src="img/dislike.png" alt="dislike-icon"></div>
+                    </div>
+                    <div id="separate">
+                        <div id="btn-share"><img src="img/share.png" alt="share-icon"><span>Share</span></div>
+                        <div id="btn-download"><img src="img/download.png" alt="download-icon"><span>Download</span>
+                        </div>
+                        <div id="btn-more"><img src="img/more.png" alt="more-icon"></div>
+                    </div>
+                </div>
             </div>
-            <div id="list-videos-suggestion">
-                <ul>
-                    <li>
-                        <img src="" alt="thumbnail" class="video-thumbnail">
-                        <h4 class="title-suggestion">title_1</h4>
-                        <h5 class="owner-suggestion">owner_1</h5>
-                        <h6>views_1</h6>
-                        <h6>issue_date_1</h6>
-                    </li>
-                    <li>
-                        <img src="" alt="">
-                        <h4 class="title-suggestion">title_2</h4>
-                        <h5 class="owner-suggestion">owner_2</h5>
-                        <h6>views_2</h6>
-                        <h6>issue_date_2</h6>
-                    </li>
-                    <li>
-                        <img src="" alt="">
-                        <h4 class="title-suggestion">title_3</h4>
-                        <h5 class="owner-suggestion">owner_3</h5>
-                        <h6>views_3</h6>
-                        <h6>issue_date_3</h6>
-                    </li>
-                    <li>
-                        <img src="" alt="">
-                        <h4 class="title-suggestion">title_4</h4>
-                        <h5 class="owner-suggestion">owner_4</h5>
-                        <h6>views_4</h6>
-                        <h6>issue_date_4</h6>
-                    </li>
-                    <li>
-                        <img src="" alt="">
-                        <h4 class="title-suggestion">title_5</h4>
-                        <h5 class="owner-suggestion">owner_5</h5>
-                        <h6>views_5</h6>
-                        <h6>issue_date_5</h6>
-                    </li>
-                </ul>
+            <div id="video-description">
+                <h5 id="viewers">800K Views</h4>
+                    <h5 id="issue-date">5 years ago</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus facilis optio eius
+                        incidunt magnam, hic impedit delectus! Nemo, laboriosam provident deserunt ullam perferendis
+                        sed saepe repellendus expedita rem aliquam dolore?</p>
             </div>
-        </section>
-    </main>
+            <div id="comments">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis perspiciatis quidem esse
+                    reprehenderit pariatur voluptate ad ab ipsa eveniet! Nostrum, totam est maxime dolores veritatis
+                    molestias quas quos molestiae illo.</p>
+            </div>
+            <section id="suggestion">
+                <div id="status">
+                    <button id="all">All</button>
+                    <button id="watched">Watched</button>
+                </div>
+                <div id="list-videos-suggestion">
+                    <ul>
+                        <li>
+                            <div class="video-thumbnail">
+                                <img src="" alt="suggestion_1">
+                            </div>
+                            <div class="description-video-suggestion">
+                                <h4 class="title-suggestion">title_1</h4>
+                                <h5 class="owner-suggestion">owner_1</h5>
+                                <h6>views_1</h6>
+                                <h6>issue_date_1</h6>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="video-thumbnail">
+                                <img src="" alt="suggestion-2">
+                            </div>
+                            <div class="description-video-suggestion">
+                                <h4 class="title-suggestion">title_2</h4>
+                                <h5 class="owner-suggestion">owner_2</h5>
+                                <h6>views_2</h6>
+                                <h6>issue_date_2</h6>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="video-thumbnail">
+                                <img src="" alt="suggestion-3">
+                            </div>
+                            <div class="description-video-suggestion">
+                                <h4 class="title-suggestion">title_3</h4>
+                                <h5 class="owner-suggestion">owner_3</h5>
+                                <h6>views_3</h6>
+                                <h6>issue_date_3</h6>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="video-thumbnail">
+                                <img src="" alt="suggestion-4">
+                            </div>
+                            <div class="description-video-suggestion">
+                                <h4 class="title-suggestion">title_4</h4>
+                                <h5 class="owner-suggestion">owner_4</h5>
+                                <h6>views_4</h6>
+                                <h6>issue_date_4</h6>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="video-thumbnail">
+                                <img src="" alt="suggestion-5">
+                            </div>
+                            <div class="description-video-suggestion">
+                                <h4 class="title-suggestion">title_5</h4>
+                                <h5 class="owner-suggestion">owner_5</h5>
+                                <h6>views_5</h6>
+                                <h6>issue_date_5</h6>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+    </div>
 </body>
 
 </html>
